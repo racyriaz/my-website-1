@@ -1,0 +1,134 @@
+/* poppins font for headings
+font-family: 'Poppins', sans-serif; */
+/* Montserrat font for paragraphs
+font-family: 'Montserrat', sans-serif; */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    color: black;
+    text-decoration: none;
+    background-color: #f1f1e8;
+    left: 1%;
+    right: 1%;
+}
+
+/* Starting of navigation bar */
+.navigation {
+    font-size: larger;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.5rem 2rem 0.25rem 2rem;
+    background-color: #f1f1e8;
+
+}
+
+a {
+    padding: 0rem 1rem 0rem 1rem;
+    font-style: normal;
+    text-decoration: none;
+    color: dimgrey;
+}
+
+a:hover {
+    color: #81b214;
+    text-decoration: none;
+}
+
+#nav_logo_round {
+    width: 8rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+/* Ending of navigation bar */
+
+/* Starting of landing page */
+.me {
+    border-radius: 0.85rem;
+    width: 45vw;
+    height: auto;
+    max-width: 20rem;
+    min-width: 180px;
+    position: relative;
+    left: 6vw;
+    float: left;
+}
+
+
+.landing-page {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: #1a1c20;
+}
+
+.land-content {
+    left: 8px;
+}
+
+
+/* End of landing page */
+
+/* starting lp3 */
+.lp3 {
+    margin: 0 0.5rem;
+}
+
+.quote {
+    background-color: #ee6f57;
+    color: #EEE;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+    padding: 1.5rem;
+    margin: 3rem 5vw;
+    text-align: center;
+    border-radius: 0.75rem;
+
+}
+
+h2 {
+    font-size: x-large;
+    font-weight: 200;
+}
+
+#yogaEmoji {
+    position: absolute;
+    /* top: 800px; */
+    left: 70%;
+    padding: 1rem 0;
+}
+
+/* starting of Lets talk */
+.lets-talk h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    text-align: left;
+    color: #ee6f57;
+    margin: 3rem 2rem 1rem 2rem;
+}
+
+#follow-me {
+    font-weight: 300;
+    font-size: larger;
+}
+
+.icons {
+    width: 1.85rem;
+}
+
+.icon-link {
+    margin: 0 2rem 0 2rem;
+}
+
+h6 {
+    position: relative;
+    right: 1rem;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: small;
+    text-align: center;
+    padding: 1.5rem;
+    color: #1a1c20;
+}
+
+/* ending of Lets talk */
