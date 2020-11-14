@@ -3,18 +3,63 @@ font-family: 'Poppins', sans-serif; */
 /* Montserrat font for paragraphs
 font-family: 'Montserrat', sans-serif; */
 body {
-    background-color: #f1f1e8;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='285' height='34.2' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='7' stroke-opacity='0.05'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #ebebeb;
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='285' height='34.2' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='7' stroke-opacity='0.05'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); */
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
     color: #1a1c20;
-    text-decoration: none;    
-    overflow: auto;
+    text-decoration: none;
+    margin: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Poppins', sans-serif;
 }
+
+.btn {
+    text-align: left;
+    padding: 1rem 3rem;
+    color: #EEE;
+    background-color: #aa3a3a;
+    border-color: #ee6f57;
+}
+
+.btn:hover {
+    background-color: #214252;
+    border-color: #212121;
+}
+
+.padBottom {
+    padding-bottom: 3rem;
+}
+
+.content {
+    padding: 0 0 2rem;
+    display: inline;
+}
+
+.block {
+    display: grid;
+
+}
+
+.middle {
+    margin: auto;
+    justify-content: space-between;
+    width: 80%;
+    list-style-type: none;
+}
+
 
 /* Starting of navigation bar */
 .navigation {
@@ -45,99 +90,64 @@ a:hover {
 /* Starting of part_1 section */
 .part_1 {
     text-align: left;
-    padding: 1.75rem 0.5rem 5rem;
+    padding: 1rem 0.5rem 8rem;
+    margin: auto;
+}
+.bg-design {
+    position: absolute;
+    width: 45%;
+    right: -23%;
+    bottom: 10px;
+    opacity: 20%;
+}
+
+.part_1>.content {
     margin: auto;
 }
 
 .me {
-    display: block;
-    margin: auto;
-    border-radius: 0.85rem;
-    min-width: 140px;
-    width: 15vw;
-    max-width: 20rem;
+    float: left;
+    min-width: 15rem;
+    max-width: 25rem;
 }
 
-.part_1 .content {
-    padding: 2rem 0;
-    margin: auto;
-    display: inline;
 
-}
+
 /* End of part_1 section */
+
+/* Starting of Part_2 section */
 .part_2 {
-    background-color: #373a40;
-    height: 42rem;
-}
-
-
-/* Display page */
-
-.display-page {
-    background-color: #1a1c20;
-    padding: 1rem 0;
-}
-
-.display-page-1 {
-    background-color: #373a40;
+    z-index: -2;
     color: #EEE;
-    border-radius: 8px;
-    margin: 1rem;
-    padding: 1rem 0 0 1rem;
+    height: 42rem;
+    background-color: #ee6f57;
+    padding: 10rem 0;
+    display: grid;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='285' height='34.2' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='7' stroke-opacity='0.1'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-.display-page-2 {
-    background-color: #b8c24e;
-    color: #373a40;
-    border-radius: 8px;
-    margin: 1rem;
-    padding: 1rem 0 0 1.5rem;
+#emj2 {
+    position: absolute;
+    right: 15%;
 }
 
-.dis-box-1 {
-    width: 80%;
-    height: 250px;
-    border-radius: 21px 21px 0 0;
-    background-color: #b8c24e;
-}
-
-.dis-box-2 {
-    width: 80%;
-    height: 250px;
-    border-radius: 21px 21px 0 0
-}
-
-.display-5 {
-    font-weight: 500;
-}
-
-.lead {
-    font-weight: 300;
-    font-size: medium;
-}
+/* Ending of Part_2 section */
 
 /* starting lp3 */
-.lp3 {
-    margin: 0 0.5rem;
-}
+
 
 .quote {
-    background-color: #ee6f57;
-    color: #EEE;
-    font-family: 'Poppins', 'Montserrat', sans-serif;
-    font-size: medium;
-    font-weight: lighter;
-    padding: 1.5rem;
-    margin: 3rem 5vw;
+    color: #214252;
+    padding: 2rem 0 4rem;
     text-align: center;
-    border-radius: 0.75rem;
-
+    background-color: #b8c24e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23b8c24e' stroke-width='0.44' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(27.05) translate(-963.03 -722.27)'%3E%3Cuse fill='%23b9c352' href='%23s' y='2'/%3E%3Cuse fill='%23b9c352' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23bbc455' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23bbc455' href='%23s'/%3E%3Cuse fill='%23bcc659' href='%23s' x='2'/%3E%3Cuse fill='%23bcc659' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(27.05) translate(-963.03 -722.27)'%3E%3Cg fill='%23bec75c'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(27.05) translate(-963.03 -722.27)'%3E%3Cg fill='%23bec75c'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(27.05) translate(-963.03 -722.27)'%3E%3Cg fill='%23bfc860'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(27.05) translate(-963.03 -722.27)'%3E%3Cg fill='%23b8c24e'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23c1c963'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(27.05) translate(-963.03 -722.27)'%3E%3Cg fill='%23ee6f57'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(27.05) translate(-963.03 -722.27)'%3E%3Cg fill='%23ee6f57'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(27.05) translate(-963.03 -722.27)'%3E%3Cg fill='%23ee6f57'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-h2 {
-    font-size: x-large;
-    font-weight: 200;
-}
+
+
 
 #yogaEmoji {
     position: absolute;
@@ -147,37 +157,108 @@ h2 {
 }
 
 /* starting of Lets talk */
-.lets-talk h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: xx-large;
-    font-weight: 800;
-    text-align: left;
-    color: #ee6f57;
-    margin: 3rem 2rem 1rem 2rem;
+.lets-talk {
+    color: #b8c24e;
+    padding: 10rem 2rem 2rem;
+    justify-content: space-around;
 }
 
-#follow-me {
-    font-weight: 300;
-    font-size: larger;
-}
+
 
 .icons {
-    width: 1.85rem;
+    width: 1.5rem;
 }
 
+
 .icon-link {
-    margin: 0 2rem 0 2rem;
+    margin: 2rem;
+    display: table;
+    padding: 0.2rem;
 }
 
 h6 {
-    position: relative;
-    right: 1rem;
-    font-family: 'Poppins', 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: small;
     text-align: center;
-    padding: 1.5rem;
+    font-weight: 300;
     color: #1a1c20;
 }
 
+#profile-pic {
+    position: absolute;
+    min-width: 6rem;
+    max-width: 15rem;
+    border-radius: 1rem;
+    left: 55%;
+}
+
+.copyrights {
+    text-align: left;
+    font-size: xx-small;
+    color: #212121;
+
+}
+
 /* ending of Lets talk */
+
+@media only screen and (max-width:600px) {
+    .navigation {
+        font-size: medium;
+        text-align: center;
+        position: relative;
+        margin: 0.5% 2% 1% 2%;
+    }
+    #nav_logo_round {
+        width: 5rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+    .bg-design {
+        position: absolute;
+        width: 195%;
+        left: 30%;
+        bottom: 200px;
+        opacity: 15%;
+        z-index: -1;
+    }
+
+    #profile-pic {
+        position: relative;
+        min-width: 6rem;
+        max-width: 10rem;
+        border-radius: 1rem;
+        left: 0%;
+    }
+
+    #emj2 {
+        display: none;
+    }
+
+    .icon-link {
+        margin: 2rem;
+        display: table;
+        padding: 0.2rem;
+    }
+
+    .icon-pack1 {
+        float: right;
+        position: relative;
+        bottom: 220px;
+        left: 50px;
+    }
+
+    .icon-pack2 {
+        display: flex;
+    }
+
+    .part_2 {
+        padding: 3rem 0 6rem;
+    }
+
+    .me {
+        padding-left: 2rem;
+    }
+
+    .copyrights {
+        text-align: left;
+        font-size: xx-small;
+    }
+}
