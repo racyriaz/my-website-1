@@ -2,14 +2,17 @@
 font-family: 'Poppins', sans-serif; */
 /* Montserrat font for paragraphs
 font-family: 'Montserrat', sans-serif; */
+
+
+
 body {
     background-color: #ebebeb;
     /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='285' height='34.2' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='7' stroke-opacity='0.05'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); */
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
     color: #1a1c20;
-    text-decoration: none;
     margin: auto;
+    overflow: auto;
 }
 
 ul {
@@ -22,8 +25,20 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     font-family: 'Poppins', sans-serif;
+}
+
+
+a {
+    color: #EEE;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b8c24e;
+    text-decoration: none;
 }
 
 .btn {
@@ -61,28 +76,33 @@ h6 {
 }
 
 
+
+
 /* Starting of navigation bar */
 .navigation {
-    font-size: larger;
-    text-align: center;
-    position: relative;
-    margin: 0.5% 2% 1% 2%;
+    font-size: small;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #214252;
+    opacity: 80%;
+    width: 6rem;
+    height: 18rem;
+    border-radius: 0.4rem;
 }
 
-a {
-    margin: 0rem 1.5% 0rem 1.5%;
-    color: dimgrey;
+.nav-bar {
+
 }
 
-a:hover {
-    color: #b8c24e;
-    text-decoration: none;
-}
+
 
 #nav_logo_round {
     width: 6rem;
     padding: 0.5rem 2rem 0.5rem 2rem;
 }
+
 
 /* Ending of navigation bar */
 
@@ -93,12 +113,13 @@ a:hover {
     padding: 1rem 0.5rem 8rem;
     margin: auto;
 }
+
 .bg-design {
+    opacity: 15%;
+    width: 14rem;
     position: absolute;
-    width: 45%;
-    right: -23%;
-    bottom: 10px;
-    opacity: 20%;
+    right: -1%;
+    top: -2%;
 }
 
 .part_1>.content {
@@ -148,14 +169,6 @@ a:hover {
 
 
 
-
-#yogaEmoji {
-    position: absolute;
-    /* top: 800px; */
-    left: 70%;
-    padding: 1rem 0;
-}
-
 /* starting of Lets talk */
 .lets-talk {
     color: #b8c24e;
@@ -191,10 +204,9 @@ h6 {
 }
 
 .copyrights {
-    text-align: left;
-    font-size: xx-small;
+    text-align: center;
+    font-size: x-small;
     color: #212121;
-
 }
 
 /* ending of Lets talk */
@@ -206,18 +218,14 @@ h6 {
         position: relative;
         margin: 0.5% 2% 1% 2%;
     }
+
     #nav_logo_round {
         width: 5rem;
         padding: 0.5rem 1rem 0.5rem 1rem;
     }
 
     .bg-design {
-        position: absolute;
-        width: 195%;
-        left: 30%;
-        bottom: 200px;
-        opacity: 15%;
-        z-index: -1;
+        visibility: hidden;
     }
 
     #profile-pic {
